@@ -63,13 +63,13 @@ tried — abandoned outright. Both entries here instead cite
 A **read-only reference/archive** catalog — not an Advisor⊣Governor
 actuation actor. It proposes or executes nothing on VNBA's behalf.
 
-Coverage is reported honestly (see `association.facts/coverage`): an
-association not in `catalog` has **no spec-basis**, full stop — never
+Coverage is reported honestly by the fail-closed exported Kotoba ABI: an
+association not explicitly admitted has **no spec-basis**, full stop — never
 fabricate one.
 
 ## Data
 
-- `src/association/facts.cljc` — the catalog, source of truth.
+- `src/association_facts.kotoba` — the sole production catalog authority.
 - `schema/association-rule.edn` — DataScript schema.
 - `data/datascript-tx.edn` — derived DataScript tx-data (query this
   alongside other `cloud-itonami`/`etzhayyim` compliance-fact sources via
@@ -80,6 +80,12 @@ History page: the founding (Prime Minister approval 14 May 1994,
 officially launched 23 August 1994 after the 1st Congress) and VNBA's
 admission to the ASEAN Banking Association as its 7th member (29
 September 1995).
+
+The catalog compiles through `kotoba-lang/compiler` to the reference evaluator,
+restricted JavaScript, and typed WebAssembly. Clojure/JVM and Node are test and
+compiler hosts only; neither is production authority. Compatibility is checked
+by observable values, typed ABI, empty effects, bounds, and fail-closed
+rejections—not compiler-output byte identity.
 
 ## License
 
